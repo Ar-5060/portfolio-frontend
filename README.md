@@ -1,40 +1,36 @@
-# 🚀 Personal Portfolio Website
+# Personal Portfolio Website
 
-A modern full-stack personal portfolio website built with **React, Spring Boot, and PostgreSQL**.
+A full-stack personal portfolio website built using **React, Spring Boot, and PostgreSQL**.
 
-This portfolio showcases my skills, projects, education, and experience with a responsive modern UI. It also includes a fully functional contact system where visitors can send messages directly through the website.
+This project represents my personal portfolio where I showcase my skills, projects, education, and technical experience. The website also includes a contact system that allows visitors to send messages directly through the portfolio. Messages are handled through a Spring Boot REST API and stored in a PostgreSQL database.
 
 ---
 
-## 🌐 Live Website
+## Live Demo
 
-🔗 **Portfolio:**  
+**Portfolio Website:**  
 https://portfolio-frontend-five-gray.vercel.app
 
+---
+
+## Features
+
+- Responsive design for desktop, tablet, and mobile devices
+- Dark theme user interface
+- Smooth animations and transitions
+- Personal introduction section
+- Skills showcase
+- Project showcase
+- Contact form with backend integration
+- REST API communication between frontend and backend
+- Contact messages stored in PostgreSQL database
+- Cloud-based deployment
 
 ---
 
-## 📌 Features
+## Technologies Used
 
-✨ Modern dark themed UI  
-✨ Fully responsive design  
-✨ Smooth animations and transitions  
-✨ Interactive sections  
-✨ About Me section  
-✨ Skills showcase  
-✨ Project showcase  
-✨ Contact form with backend integration  
-✨ Messages stored in PostgreSQL database  
-✨ REST API communication  
-✨ Cloud deployment ready  
-
-
----
-
-# 🛠️ Technologies Used
-
-
-## Frontend
+### Frontend
 
 - React.js
 - Vite
@@ -43,67 +39,53 @@ https://portfolio-frontend-five-gray.vercel.app
 - React Icons
 - Axios
 
-
-## Backend
+### Backend
 
 - Java
 - Spring Boot
 - Spring Data JPA
 - REST API
 
-
-## Database
+### Database
 
 - PostgreSQL
-- Neon Cloud Database
+- Neon PostgreSQL Cloud Database
 
-
-## Deployment
+### Deployment
 
 - Frontend: Vercel
 - Backend: Render
 - Database: Neon PostgreSQL
 
+---
+
+## System Architecture
+
+```
+User
+ |
+ |
+React Frontend
+ |
+ |
+Axios API Request
+ |
+ |
+Spring Boot Backend
+ |
+ |
+PostgreSQL Database
+```
 
 ---
 
-# 🏗️ System Architecture
+## Project Structure
 
-          User
-
-           |
-
-           |
-
-    React Frontend
-
-           |
-
-           |
-
-      Axios API
-
-           |
-
-           |
-
- Spring Boot Backend
-
-           |
-
-           |
-
-  Neon PostgreSQL Database
-  
-
----
-
-# 📂 Project Structure
-
+```
 portfolio-project
 │
 ├── portfolio-frontend
-│
+│   │
 │   ├── public
 │   │
 │   ├── src
@@ -117,40 +99,132 @@ portfolio-project
 │   │   └── App.jsx
 │   │
 │   ├── package.json
-│   ├── vite.config.js
-│   └── README.md
+│   └── vite.config.js
 │
 │
 └── portfolio-backend
     │
     ├── src/main/java
-    │
+    │   │
     │   ├── controller
-    │   │
     │   ├── entity
-    │   │
     │   ├── repository
-    │   │
     │   └── config
     │
     └── pom.xml
-
+```
 
 ---
 
-# ⚙️ Installation & Setup
+## Installation and Setup
 
-
-## 1. Clone Repository
-
+### Clone Repository
 
 ```bash
 git clone https://github.com/Ar-5060/portfolio-frontend.git
-👨‍💻 Author
-Anisur Rahman
-GitHub:
+```
+
+### Frontend Setup
+
+Go to the frontend directory:
+
+```bash
+cd portfolio-frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Frontend will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+### Backend Setup
+
+Go to the backend directory:
+
+```bash
+cd portfolio-backend
+```
+
+Run Spring Boot application:
+
+```bash
+./mvnw spring-boot:run
+```
+
+Backend server will run at:
+
+```
+http://localhost:8080
+```
+
+---
+
+## API Integration
+
+The frontend communicates with the backend using REST API.
+
+Example endpoint:
+
+```
+POST /api/contact
+```
+
+Contact form workflow:
+
+1. User submits the contact form
+2. React sends data using Axios
+3. Spring Boot REST Controller receives the request
+4. Data is saved into PostgreSQL database
+
+---
+
+## Deployment
+
+The project is deployed using:
+
+- Vercel for React frontend
+- Render for Spring Boot backend
+- Neon PostgreSQL for database hosting
+
+---
+
+## Future Improvements
+
+- Add authentication system
+- Add admin dashboard for managing messages
+- Add more project categories
+- Improve SEO optimization
+- Add blog section
+
+---
+
+## Author
+
+**Anisur Rahman**
+
+GitHub:  
 https://github.com/Ar-5060
-LinkedIn:
+
+LinkedIn:  
 https://www.linkedin.com/in/anisur-rahman-swe
-⭐ Support
-If you like this project, consider giving it a ⭐ on GitHub.
+
+---
+
+## License
+
+This project is open source and available for personal learning and development purposes.
