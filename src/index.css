@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+
+
+body {
+
+  margin: 0;
+
+  font-family: 'Poppins', sans-serif;
+
+  background: #050505;
+
+  color: white;
+
+}
+
+
+
+
+
+
+/* =========================
+   Cyber Theme Colors
+========================= */
+
+
+:root{
+
+  --bg-primary:#050505;
+
+  --bg-card:#0b0f0d;
+
+  --neon-green:#22c55e;
+
+  --neon-light:#4ade80;
+
+  --emerald:#10b981;
+
+  --text-primary:#ffffff;
+
+  --text-secondary:#9ca3af;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   Custom Scrollbar
+========================= */
+
+
+::-webkit-scrollbar {
+
+  width: 10px;
+
+}
+
+
+
+::-webkit-scrollbar-track {
+
+  background: #050505;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+
+  background: linear-gradient(
+
+    180deg,
+
+    #22c55e,
+
+    #10b981
+
+  );
+
+
+  border-radius: 20px;
+
+
+}
+
+
+
+::-webkit-scrollbar-thumb:hover {
+
+
+  background: linear-gradient(
+
+    180deg,
+
+    #4ade80,
+
+    #22c55e
+
+  );
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   Text Selection
+========================= */
+
+
+::selection{
+
+  background:#22c55e;
+
+  color:#050505;
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   Cyber Grid Background
+========================= */
+
+
+.cyber-grid{
+
+
+background-image:
+
+linear-gradient(
+
+rgba(34,197,94,0.08) 1px,
+
+transparent 1px
+
+),
+
+
+linear-gradient(
+
+90deg,
+
+rgba(34,197,94,0.08) 1px,
+
+transparent 1px
+
+);
+
+
+
+background-size:
+
+40px 40px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   Neon Glow
+========================= */
+
+
+.neon-glow{
+
+
+box-shadow:
+
+0 0 20px rgba(34,197,94,0.4),
+
+0 0 40px rgba(34,197,94,0.2);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   Hide Image Drag
+========================= */
+
+
+img{
+
+  user-select:none;
+
+}
